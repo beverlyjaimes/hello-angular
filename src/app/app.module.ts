@@ -8,6 +8,8 @@ import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { FullCalendarModule } from '@fullcalendar/angular'; // the main connector. must go first
+
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +17,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
